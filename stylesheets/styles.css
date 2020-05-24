@@ -1,0 +1,134 @@
+/*Thanh nav bar*/
+
+/*Main content*/
+.bread-crumb{
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding:5px;
+
+}
+.bread-crumb>p{
+    margin:0;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+.side-table{
+    list-style: none;
+    width:80%;
+    display: inline-block;
+    margin:20px 20px;
+    padding-left:0;
+}
+.side-table>li{
+    border: 0.5px solid #ccc;
+    padding:5px;
+    text-align: center;
+}
+#demo{
+    display: inline-block;
+}
+.main-container .row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.carousel{
+    margin-top:20px;
+}
+.new-table{
+    list-style: none;
+    width:80%;
+    display: inline-block;
+    margin:20px 20px;
+    padding-left:0;
+    border:solid 1px #005DC0;
+    height: max-content;
+    border-radius: 10px 10px 0 0;
+} 
+.new-table>li{
+    font-style:italic;
+    color: darkblue;
+    margin:5px 0;
+}
+.more>a{
+    margin-left:50%;
+}
+.headline{
+    text-align: center;
+    padding:10px;
+    background-color: darkblue;
+    font-size:20px;
+    color:white;
+    border-radius: 10px 10px 0 0;
+}
+.fa-arrow-right{
+    color:black;
+    display: inline-block;
+}
+.image-fluid{
+    text-align: center;
+}
+.image-fluid>img{
+    margin-bottom: 20px;
+    width: 120px;
+    height: 167px;
+}
+.card{
+    margin-bottom: 20px;
+    padding:10px;
+}
+.mx-auto>h5{
+    cursor: pointer;
+}
+.fa-star{
+    color:#ccc;
+}
+.star-rating .checked{
+    color:rgb(248, 167, 61);
+}
+.star-rating{
+    margin-right: 20px;
+}
+.rating{
+    display: flex;
+}
+.rating>p{
+    opacity: 50%;
+}
+*{
+    z-index: 0;
+}
+
+.footer{
+    background-color: darkblue;
+    line-height: 2;
+    color:white;
+}
+.footer>p{
+    margin-bottom:0;
+    margin-left: 20px;
+}
+.chat-box{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right:10px; 
+    background:#4caf50;
+    color:white;
+    width: 250px;
+    padding:5px;    
+    border-radius: 10px 10px 0 0;
+}
+.chat-box>p{
+    margin-bottom: 0;
+    cursor:pointer;
+    margin-right: 10px;
+}
+.chat-box>.far{
+    margin-top:5px;
+}
+
+
+

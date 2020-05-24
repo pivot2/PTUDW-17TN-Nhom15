@@ -1,0 +1,88 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+}
+.logo-hcmus{
+    height: 100px;
+    margin: 10px;
+    align-self: center;
+}
+.login-form{
+    padding:10px;
+}
+.input-username{
+    display: block;
+    margin-bottom: 5px;
+}
+.input-password{
+    display: block;
+    margin-bottom: 10px;
+}
+input{
+    width: 200px;
+}
+.bar{
+    display:flex;
+}
+.fas{
+    padding-top:5px;
+    padding-right: 5px;
+}
+a{
+    margin-right:10px;
+}
+.fa-sign-in-alt{
+    margin-left:20px;
+}
+.fa,.fas{
+    cursor: pointer;
+}
+.fa-sign-in-alt:hover{
+    color:blue;
+}
+.search-bar{
+    padding:3px 10px;
+    border:solid 1px #ccc;
+    border-radius: 20px;
+    width: 400px;
+    align-self: center;
+}
+.search-bar-2{
+    display: flex;
+    padding:3px 10px;
+    border:solid 1px #ccc;
+    border-radius: 20px;
+    width: calc(100%-10px);
+    margin: 5px 5px;
+}
+.input-search{
+    border:none;
+    flex-grow:5;
+    line-height: 2;
+    border-right:solid 1px #ccc;
+}
+select{
+    border:none;
+}
+.btn-search{
+    background-color: darkblue;
+    color:white;
+    border:none;
+    border-radius: 20px;
+    cursor:pointer;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.sticky + .main-container {
+    padding-top: 100px;
+  }
+.nav-all{
+    background: white;
+    border-bottom: 1px solid #ccc;
+    z-index: 1;
+}
