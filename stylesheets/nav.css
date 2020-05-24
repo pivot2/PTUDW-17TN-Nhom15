@@ -64,7 +64,8 @@ a{
     border-right:solid 1px #ccc;
 }
 select{
-    border:none;
+    border:10px none;
+
 }
 .btn-search{
     background-color: darkblue;
