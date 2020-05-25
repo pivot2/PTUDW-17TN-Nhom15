@@ -3,6 +3,7 @@
     justify-content: space-between;
     width: 100%;
     top: 0;
+    border-bottom:solid 1px #ccc;
 }
 .logo-hcmus{
     height: 100px;
@@ -49,6 +50,7 @@ a{
     width: 400px;
     align-self: center;
 }
+/*
 .search-bar-2{
     display: flex;
     padding:3px 10px;
@@ -57,6 +59,7 @@ a{
     width: calc(100%-10px);
     margin: 5px 5px;
 }
+*/
 .input-search{
     border:none;
     flex-grow:5;
@@ -87,3 +90,12 @@ select{
     border-bottom: 1px solid #ccc;
     z-index: 1;
 }
+
+.navbar{
+    z-index:1;
+}
+@media only screen and (min-width: 992px) {
+    .navbar {
+      display: none !important;
+    }
+  }
