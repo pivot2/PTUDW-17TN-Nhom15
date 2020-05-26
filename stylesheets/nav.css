@@ -99,3 +99,23 @@ select{
       display: none !important;
     }
   }
+ul{
+    list-style: none;
+}
+.nav-top>ul{
+    height: 100%;
+    display: table;
+    border-collapse: collapse;
+    width:250px;
+}
+.nav-top>ul li{
+    display: table-row;
+    border-left: 1px solid #ccc;
+}
+.nav-top .setting{
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.nav-top .fas{
+    margin:10px 20px 10px 20px;
+}
