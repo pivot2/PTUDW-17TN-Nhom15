@@ -45,7 +45,7 @@ a{
 }
 .search-bar{
     padding:3px 10px;
-    border:solid 1px #ccc;
+    border:solid 0.5px #ccc;
     border-radius: 20px;
     width: 400px;
     align-self: center;
@@ -68,7 +68,6 @@ a{
 }
 select{
     border:10px none;
-
 }
 .btn-search{
     background-color: darkblue;
