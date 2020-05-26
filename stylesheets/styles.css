@@ -24,7 +24,24 @@ body{
 .side-table>li{
     border: 0.5px solid #ccc;
     padding:5px;
-    text-align: center;
+    text-align: left;
+}
+.side-table .fas{
+    margin:10px 20px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+.side-table .far{
+    margin:10px 20px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+.side-table>li>p{
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
 }
 #demo{
     display: inline-block;
@@ -120,6 +137,7 @@ body{
     width: 250px;
     padding:5px;    
     border-radius: 10px 10px 0 0;
+    line-height: 2;
 }
 .chat-box>p{
     margin-bottom: 0;
@@ -127,7 +145,7 @@ body{
     margin-right: 10px;
 }
 .chat-box>.far{
-    margin-top:5px;
+    margin-top:7px;
 }
 
 
