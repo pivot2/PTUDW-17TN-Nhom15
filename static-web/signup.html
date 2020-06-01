@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../stylesheets/signup.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <div class="header">
+        <div class="d-flex justify-content-between text-center">
+            <p style="font-size: 39px;font-weight: 700;color:white;text-align: center;">fit@hcmus</p>
+            <select name="language" id="select-language">
+                <option value="vi"> Vietnamese (vi)</option>
+                <option value="en"> English (en)</option>
+            </select>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="form-signup">
+            <h2>Đăng ký</h2>
+            <form class="d-flex flex-column">
+                <div class="name-input">
+                    <input type="text" id="name" required>
+                    <label for="name" id="label-name">Tên đăng nhập</label>
+                </div>
+                <div class="row">
+                    <div class="password-input col-6">
+                        <input id="password" type="password" required>
+                        <label for="password" id="label-name">Mật khẩu</label>
+                    </div>
+                    <div class="rewrite-password col-6">
+                        <input id="rpassword" type="password" required>
+                        <label for="rpassword" id="label-name">Nhập lại mật khẩu</label>
+                    </div>
+                </div>
+                <div class="gmail-input">
+                    <input type="gmail" id="gmail" required>
+                    <label for="gmail" id="label-gmail">Gmail</label>
+                </div>
+                <div class="row">
+                    <div class="phone-input col-6">
+                        <input id="phone" type="text" required>
+                        <label for="phone" id="label-phone">SĐT</label>
+                    </div>
+                    <div class="datepicker col-6" >
+                        <label for="date" id="label-date" tabindex="0" onclick="myFunction()">Ngày sinh</label>
+                        <input type="date" 
+                                value="2020-05-31"
+                                min="2020-01-01" max="2025-12-31" id="date-picker">
+                    </div>
+                </div>
+                <input type="submit" value="Đăng ký">
+            </form>
+            
+        </div>
+    </div>
+    <div class="footer">
+        <p>227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM</p>
+    </div>
+    <script>
+        function myFunction() {
+            let label=document.getElementById("label-date");
+            let datepicker=document.getElementById("date-picker");
+            label.setAttribute("style","top:-10px; left:0px; font-size:14px; padding:0px; z-index: 0;");
+            datepicker.setAttribute("style","opacity: 100%; z-index: 10;");
+        }
+    </script>
+</body>
+</html>
