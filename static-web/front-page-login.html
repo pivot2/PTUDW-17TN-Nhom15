@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="../stylesheets/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="test.css">
     <title>HCMUS library Web App</title>
 </head>
 <body>
@@ -30,9 +34,9 @@
                     </div>
                     <div class="nav-top">
                         <ul>
-                            <li><i class="fas fa-user"></i>Quản lí tài khoản</li>
-                            <li class="setting"><i class="fas fa-cog"></i>Cài đặt</li>
-                            <li><i class="fas fa-sign-out-alt"></i>Đăng xuất</li>
+                            <li><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting"><i class="fas fa-cog"></i><span>Cài đặt</span></li>
+                            <li><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -100,13 +104,6 @@
                 <div class="col-xs-12 col-lg-9">
                     <div id="demo" class="carousel slide" data-ride="carousel">
 
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                          <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                      
                         <!-- The slideshow -->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
@@ -130,120 +127,210 @@
                       
                       </div>
                       <h2>Tài liệu - Giáo trình</h2>
-                      <div class="row">
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <p>(10 nhận xét)</p>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
                                     </div>
-                                    <p>(10 nhận xét)</p>
                                 </div>
                             </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <p>(10 nhận xét)</p>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="bg-white card mx-auto ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5>Lập trình hướng đối tượng</h5>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
                                     </div>
-                                    <p>(10 nhận xét)</p>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg-white card mx-auto ml-sm-0">
+                                <div class="mx-auto">
+                                    <div class="image-fluid">
+                                        <img src="../images/book.PNG" alt="">
+                                    </div>
+                                    <h5>Lập trình hướng đối tượng</h5>
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+                                        <p>(10 nhận xét)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -269,7 +356,25 @@
                 nav[0].classList.remove("sticky");
             }
         }
-        
+        $('.owl-carousel').owlCarousel({
+            margin: 10,
+            nav: true,
+            mouseDrag:false,
+            dots:false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600:{
+                    items:2
+                },
+                1050: {
+                    items: 3
+                },
+                
+            },
+            navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+        });
     </script>        
     
 </body>

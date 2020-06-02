@@ -81,9 +81,7 @@ select{
     top: 0;
     width: 100%;
   }
-.sticky + .main-container {
-    padding-top: 100px;
-  }
+
 .nav-all{
     background: white;
     border-bottom: 1px solid #ccc;

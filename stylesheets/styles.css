@@ -150,6 +150,9 @@ body{
 .bread-crumb-text{
     color: #08a30d;
 }
+li span{
+    cursor: pointer;
+}
 
 
 
