@@ -1,0 +1,55 @@
+.order-search:nth-child(1){
+width: 30%;
+}
+
+.order-search{
+    display: flex;
+    color: gray;
+    padding: 10px;
+}
+
+.option>li{
+    display: inline;
+    padding: 0 10px;
+}
+
+.order-search>*{
+    margin: auto 10px;
+}
+
+.item-search h5{
+    margin:0;
+}
+
+#search-header{
+    margin-left: 0;
+}
+
+.row{
+    padding-left:15px;
+}
+
+#search-header>h4{
+    margin-top: 15px;
+}
+
+.option a{
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    color: gray;
+}
+
+.option a:link{
+    color: gray;
+}
+
+.option li a:hover{
+    color: blue;
+    border-bottom: 2px blue solid;
+}
+
+.option li a.active{
+    color: blue;
+    border-bottom: 2px blue solid;
+}
