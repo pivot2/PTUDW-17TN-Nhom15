@@ -94,6 +94,11 @@ body{
 .card{
     margin-bottom: 20px;
     padding:10px;
+    box-sizing: border-box;
+    border-radius: 0 !important;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
 }
 .mx-auto>h5{
     cursor: pointer;
@@ -153,6 +158,11 @@ body{
 li span{
     cursor: pointer;
 }
-
+ul{
+    background-color: white;
+}
+.row{
+    background-color: #f4f4f4;
+}
 
 

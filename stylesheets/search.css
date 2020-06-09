@@ -1,3 +1,26 @@
+@media only screen and (min-width: 1080px) {
+    .card {
+      width: 30%;
+      margin-right: 20px;
+    }
+  }
+@media only screen and (max-width: 1080px) {
+    .card {
+      width: 40%;
+      margin-right: 50px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .card {
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+/*@media only screen and (min-width: 992px) {
+    .navbar {
+      display: none !important;
+    }
+  }*/
 .order-search:nth-child(1){
 width: 30%;
 }
@@ -5,7 +28,9 @@ width: 30%;
 .order-search{
     display: flex;
     color: gray;
-    padding: 10px;
+    margin:10px 0px;
+    background-color: white;
+    
 }
 
 .option>li{

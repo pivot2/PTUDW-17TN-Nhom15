@@ -9,7 +9,11 @@
 }
 .owl-prev:focus,
 .owl-next:focus{
-    outline:none;
+    outline: none;
+}
+.owl-prev:hover,
+.owl-next:hover{
+  background:#ccc !important;
 }
 .owl-prev {
   left: 0;
