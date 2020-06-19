@@ -78,3 +78,6 @@ width: 30%;
     color: blue;
     border-bottom: 2px blue solid;
 }
+.pagination{
+    background-color: #f4f4f4;
+}

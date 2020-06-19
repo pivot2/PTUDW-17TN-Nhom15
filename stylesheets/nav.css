@@ -84,12 +84,12 @@ select{
 
 .nav-all{
     background: white;
-    border-bottom: 1px solid #ccc;
     z-index: 1;
 }
 
 .navbar{
     z-index:1;
+    border-bottom: 1px solid #ccc;
 }
 @media only screen and (min-width: 992px) {
     .navbar {

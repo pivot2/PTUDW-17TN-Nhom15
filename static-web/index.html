@@ -304,12 +304,15 @@
         window.onscroll = function() {myFunction()};
         var nav = document.getElementsByClassName("nav-all");
         function myFunction() {
-            let sticky = nav[0].offsetTop;
-            console.log(sticky);
-            if (window.pageYOffset > sticky+50) {
-                nav[0].classList.add("sticky");
-            } else {
-                nav[0].classList.remove("sticky");
+            let height=$(document).height();
+            if (height>960)
+            {
+                let sticky = nav[0].offsetTop;
+                if (window.pageYOffset > sticky) {
+                    nav[0].classList.add("sticky");
+                } else {
+                    nav[0].classList.remove("sticky");
+                }
             }
         }
         $('.owl-carousel').owlCarousel({
