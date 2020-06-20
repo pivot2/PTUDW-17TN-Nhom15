@@ -5,11 +5,7 @@ html{height:100%;}
 margin:0px;
 padding:0px;
 outline:none;
--webkit-transition:0.5s;
--moz-transition:0.5s;
--ms-transition:0.5s;
--o-transition:0.5s;
-transition:0.5s;
+transition:0.2s;
 }
 
 
@@ -25,6 +21,7 @@ margin:0px;
 
 aside
 {
+    /* float: left; */
 height:100%;
 width:200px;
 background:#222527;
@@ -42,7 +39,6 @@ ul li
 list-style-type:none;
 color:#ffffff;
 padding:10px;
-
 overflow: auto;
 cursor:pointer;
 }
@@ -72,7 +68,7 @@ float:left;
 
 .icons
 {
-padding:10px;
+padding:7px 10px;
 }
 
 .linktitle
@@ -95,7 +91,7 @@ width:60px;
 }
 
 .active{
-    width: 50px;
+    width: 60px;
     background-color: white;
     color: #005DC0;
 }
@@ -114,8 +110,8 @@ padding: 0px 0px 0px 10px;
 {
 position: absolute;
 z-index: -1;
-left: -100px;
-padding: 29px 15px;
+left: -200px;
+padding: 32.5px 15px;
 line-height:0px;
 background:#222527;
 }
