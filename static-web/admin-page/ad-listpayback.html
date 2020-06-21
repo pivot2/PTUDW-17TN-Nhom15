@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../stylesheets/ad-nav.css">
-    <link rel="stylesheet" href="../../stylesheets/ad-request-borrowbook.css">
+    <link rel="stylesheet" href="../../stylesheets/ad-listpayback.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -21,8 +21,8 @@
               <li><div class="title">TÀI KHOẢN</div></li>
               <li><a a href="ad-myprofile.html"><div class="icons"><i class="fa fa-user-circle"></div></i><div class="linktitle">Thông tin cá nhân</div></a></li>
               <li><div class="title">QUẢN LÍ</div></li>
-              <li class="active"><a><div class="icons"><i class="fa fa-tags"></i></div><div class="linktitle">Yêu cầu mới</div></a></li>
-              <li ><a href="ad-listpayback.html"><div class="icons"><i class="fa fa-calendar"></i></div><div class="linktitle">Lịch trả sách</div></a></li>
+              <li ><a href="./ad-request-borrowbook.html"><div class="icons"><i class="fa fa-tags"></i></div><div class="linktitle">Yêu cầu mới</div></a></li>
+              <li class="active"><a><div class="icons"><i class="fa fa-calendar"></i></div><div class="linktitle">Lịch trả sách</div></a></li>
               <li><div class="title">DỮ LIỆU</div></li>
               <li ><a href="ad-listbook.html"><div class="icons"><i class="fa fa-book"></i></div><div class="linktitle">Kho sách</div></a></li>
               <li ><a href="ad-listuser.html"><div class="icons"><i class="fa fa-users-cog"></i></div><div class="linktitle">Danh sách user</div></a></li>
@@ -32,7 +32,7 @@
 
         <div class="grid-item" id="content">
             <div class="headarea">
-              DANH MỤC GIAO DỊCH
+              DANH MỤC TRẢ SÁCH
             </div>
 
             <div>
@@ -42,21 +42,14 @@
                       <th scope="col-1">Mã giao dịch</th>
                       <th scope="col-2">Mã user</th>
                       <th scope="col-2">Họ và tên</th>
-                      <th scope="col-2">Ngày tạo giao dịch</th>
+                      <th scope="col-2">Ngày mượn</th>
+                      <th scope="col-2">Ngày trả dự kiến</th>
                       <th scope="col-2">
                         <select class="option">
-                        <option>Trạng thái giao dịch</option>
-                        <option>Đang đợi</option>
-                        <option>Đã duyệt</option>
-                        <option>Đã hủy</option>
-                        </select>
-                      </th>
-
-                      <th scope="col-2">
-                        <select class="option">
-                        <option>Loại giao dịch</option>
-                        <option>Mua</option>
-                        <option>Mượn</option>
+                        <option>Trạng thái trả</option>
+                        <option>Đã trả</option>
+                        <option>Còn hạn</option>
+                        <option>Quá hạn</option>
                         </select>
                       </th>
 
@@ -70,46 +63,22 @@
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
                       <td>20/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mượn</td>
+                      <td>20/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
-                    <tr>
-                      <td>BU10048</td>
-                      <td>151214569</td>
-                      <td>Nguyễn Duy Khánh</td>
-                      <td>19/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mua</td>
-                      <td>
-                        <a href="./ad-request-detail.html">Xem</a>
-                      </td>
-                    </tr>
-                    
-                    <tr>
-                      <td>BU10047</td>
-                      <td>151214569</td>
-                      <td>Nguyễn Duy Khánh</td>
-                      <td>18/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mua</td>
-                      <td>
-                        <a href="./ad-request-detail.html">Xem</a>
-                      </td>
-                    </tr>
-
                     <tr>
                       <td>BO10026</td>
                       <td>1712012</td>
                       <td>Nguyễn Xuân Thắng</td>
                       <td>18/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mượn</td>
+                      <td>18/07/2020</td>
+                      <td class="done">Đã trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -118,10 +87,10 @@
                       <td>1712012</td>
                       <td>Nguyễn Xuân Thắng</td>
                       <td>15/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
 
@@ -130,34 +99,22 @@
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
                       <td>15/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
 
-                    <tr>
-                      <td>BO10023</td>
-                      <td>1744512001</td>
-                      <td>Võ Trường An</td>
-                      <td>15/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mua</td>
-                      <td>
-                        <a href="./ad-request-detail.html">Xem</a>
-                      </td>
-                    </tr>
-                    
                     <tr>
                       <td>BO10022</td>
                       <td>1712037</td>
                       <td>Lâm Thành Lộc</td>
                       <td>15/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -166,10 +123,10 @@
                       <td>1712048</td>
                       <td>Lê Xuân Cường</td>
                       <td>15/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="done">Đã trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -178,10 +135,10 @@
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
                       <td>15/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -190,34 +147,22 @@
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
                       <td>15/06/2020</td>
-                      <td class="cancel">Đã hủy</td>
-                      <td>Mượn</td>
+                      <td>15/07/2020</td>
+                      <td class="done">Đã trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
-                    
-                    <tr>
-                      <td>BU10046</td>
-                      <td>151214569</td>
-                      <td>Nguyễn Duy Khánh</td>
-                      <td>15/06/2020</td>
-                      <td class="cancel">Đã hủy</td>
-                      <td>Mua</td>
-                      <td>
-                        <a href="./ad-request-detail.html">Xem</a>
-                      </td>
-                    </tr>
-                    
+              
                     <tr>
                       <td>BO10018</td>
                       <td>1712001</td>
                       <td>Trần Lê Bá Thịnh</td>
                       <td>13/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mượn</td>
+                      <td>13/07/2020</td>
+                      <td class="inprogress">Chưa trả</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -225,11 +170,11 @@
                       <td>BO10017</td>
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
+                      <td>13/05/2020</td>
                       <td>13/06/2020</td>
-                      <td class="waiting">Đang đợi</td>
-                      <td>Mượn</td>
+                      <td class="late">Quá hạn</td>
                       <td>
-                        <a href="./ad-request-detail.html">Xem</a>
+                        <a href="./ad-listpayback-detail.html">Xem</a>
                       </td>
                     </tr>
                     
@@ -237,9 +182,9 @@
                       <td>BO10016</td>
                       <td>1712001</td>
                       <td>Phạm Hoàng Nhật Anh</td>
+                      <td>11/05/2020</td>
                       <td>11/06/2020</td>
-                      <td class="done">Đã duyệt</td>
-                      <td>Mượn</td>
+                      <td class="late">Quá hạn</td>
                       <td>
                         <a href="./ad-request-detail.html">Xem</a>
                       </td>

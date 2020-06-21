@@ -26,10 +26,10 @@
     border: none;
 }
 
-.cancel{
+.done{
     background-color: #e9ecef;
 }
 
-.waiting{
+.late{
     background-color: #dc3545;
 }
