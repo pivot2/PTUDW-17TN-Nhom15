@@ -17,11 +17,17 @@
     align-items: center;
 }
 
+.form-group input:not(#note), .form-group select{
+    pointer-events: none ;
+}
+
 .grid-item{
     padding-bottom: 50px;
 }
 
-.option {
-    font-weight: bold;
-    border: none;
+#back-button a{
+    color: white;
+}
+#back-button a:hover{
+    text-decoration: none;
 }
