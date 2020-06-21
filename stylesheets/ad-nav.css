@@ -1,18 +1,5 @@
 html{height:100%;}
 
-*
-{
-margin:0px;
-padding:0px;
-outline:none;
--webkit-transition:0.5s;
--moz-transition:0.5s;
--ms-transition:0.5s;
--o-transition:0.5s;
-transition:0.5s;
-}
-
-
 body{
 height:100%;
 background: #fff;
@@ -23,26 +10,29 @@ padding:0px;
 margin:0px;
 }
 
-aside
+/*------------------------------Nav bar---------------------------*/
+.navbaradmin
 {
-height:100%;
+    /* float: left; */
 width:200px;
 background:#222527;
-}
-
-ul
-{
 padding:0px;
 margin:0px;
+}
+
+.navbaradmin ul
+{
+padding:0px;
+margin: 0px;
 border-bottom:1px solid #1c1f21;
 }
+
 
 ul li
 {
 list-style-type:none;
 color:#ffffff;
 padding:10px;
-
 overflow: auto;
 cursor:pointer;
 }
@@ -62,7 +52,7 @@ color:#005DC0;
 
 ul li:hover .linktitle
 {
-color:#005DC0;
+color:white;
 }
 
 ul li div
@@ -72,7 +62,7 @@ float:left;
 
 .icons
 {
-padding:10px;
+padding:7px 10px;
 }
 
 .linktitle
@@ -89,13 +79,19 @@ padding-left: 10px;
 
 /* Reponsive menu code */
 @media all and (max-width: 800px) {
-aside
+.navbaradmin
 {
 width:60px;
 }
 
+.gridcontainer{
+    display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 15% 85%;
+}
+
 .active{
-    width: 50px;
+    width: 60px;
     background-color: white;
     color: #005DC0;
 }
@@ -114,15 +110,17 @@ padding: 0px 0px 0px 10px;
 {
 position: absolute;
 z-index: -1;
-left: -100px;
-padding: 29px 15px;
+left: -200px;
+padding: 32.5px 15px;
 line-height:0px;
 background:#222527;
 }
 
 ul li:hover:not(.active) .linktitle
 {
+    transition: 0.2s;
 left:60px;
+z-index: 1;
 }
 .icons
 {
