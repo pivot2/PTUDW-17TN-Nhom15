@@ -8,6 +8,7 @@
 .logo-hcmus{
     height: 100px;
     margin: 10px;
+    margin-left: 30px;
     align-self: center;
 }
 .login-form{
@@ -68,7 +69,6 @@ a{
 }
 select{
     border:10px none;
-
 }
 .btn-search{
     background-color: darkblue;
@@ -82,20 +82,38 @@ select{
     top: 0;
     width: 100%;
   }
-.sticky + .main-container {
-    padding-top: 100px;
-  }
+
 .nav-all{
     background: white;
-    border-bottom: 1px solid #ccc;
     z-index: 1;
 }
 
 .navbar{
     z-index:1;
+    border-bottom: 1px solid #ccc;
 }
 @media only screen and (min-width: 992px) {
     .navbar {
       display: none !important;
     }
   }
+ul{
+    list-style: none;
+}
+.nav-top>ul{
+    height: 100%;
+    display: table;
+    border-collapse: collapse;
+    width:250px;
+}
+.nav-top>ul li{
+    display: table-row;
+    border-left: 1px solid #ccc;
+}
+.nav-top .setting{
+    border-top:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.nav-top .fas{
+    margin:10px 20px 10px 20px;
+}

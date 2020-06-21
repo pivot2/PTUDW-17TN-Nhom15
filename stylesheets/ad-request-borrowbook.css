@@ -1,0 +1,35 @@
+.gridcontainer{
+    display: grid;
+    height:100%;
+    grid-column-gap: 50px;
+    grid-template-columns: 20% 70%;
+}
+
+.headarea{
+    height: 100px;
+    background-color: #005DC0;
+    color: white;
+    padding: 35px 25px;
+    margin-bottom: 20px;
+}
+
+#listButton{
+    align-items: center;
+}
+
+.grid-item{
+    padding-bottom: 50px;
+}
+
+.option {
+    font-weight: bold;
+    border: none;
+}
+
+.cancel{
+    background-color: #e9ecef;
+}
+
+.waiting{
+    background-color: #dc3545;
+}

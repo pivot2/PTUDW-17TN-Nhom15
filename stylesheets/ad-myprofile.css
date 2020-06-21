@@ -1,0 +1,21 @@
+.gridcontainer{
+    display: grid;
+    height:100%;
+    grid-column-gap: 50px;
+    grid-template-columns: 20% 70%;
+}
+
+.headarea{
+    height: 100px;
+    background-color: #005DC0;
+    color: white;
+    padding: 35px 25px;
+    margin-bottom: 20px;
+}
+
+#listButton{
+    align-items: center;
+}
+form{
+    width: 100%;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <link rel="stylesheet" href="../stylesheets/status.css">
+    <link rel="stylesheet" href="../stylesheets/borrow.css">
+    <title>Mượn sách</title>
+</head>
+<body>
+    <div class="container1">
+        <div id="nav-placeholder">
+            <div class="nav-all">
+                <div class="nav">
+                    <img class="logo-hcmus" src="../images/hcmus.png" alt="">
+                    <div class="search-bar d-none d-lg-flex">
+                        <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                        <select name="type" id="select-type">
+                            <option value="tac-gia">Tác giả</option>
+                            <option value="isbn">ISBN</option>
+                            <option value="the-loai">Thể loại</option>
+                        </select>
+                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
+                    </div>
+                    <div class="nav-top">
+                        <ul>
+                            <li onclick="location.href='info.html';"><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <nav class="navbar navbar-expand navbar-light bg-white">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Dịch vụ
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                              <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        </ul>    
+                </nav>
+            </div>           
+        </div>
+        <div class="main-container">
+            <div class="bread-crumb">
+                <p class="bread-crumb-text">Chào mừng <span style="font-weight: 600;">Nguyễn Xuân Thắng</span> đến với thư viện khoa Công nghệ thông tin Đại học Khoa học tự nhiên- ĐHQG TP HCM</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 d-none d-lg-block">
+                    <div class="side-panel">
+                        <ul class="side-table">
+                            <li><i class="fas fa-book"></i><p>DỊCH VỤ</p></li>
+                            <li><i class="far fa-newspaper"></i><p>TIN TỨC</p> </li>
+                            <li><i class="fas fa-phone"></i><p>LIÊN HỆ</p></li>
+                            <li><i class="far fa-question-circle"></i><p>FAQS</p></li>
+                        </ul>
+                        
+                    </div>
+                    <ul class="new-table">
+                        <div class="headline">
+                            <b>TIN TỨC</b>
+                        </div>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <div class="more">
+                            <a href="">Xem tin khác...</a>
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-lg-9" id="main-content">
+                    <div class="content row">
+                        <div class="img-content col-12 col-md-6">
+                            <img src="../images/csdl.jpg" alt="">
+                            <h5>Lập trình hướng đối tượng</h5>
+                            <div class="rating">
+                                <div class="star-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <a href="">(Xem 21 đánh giá)</a>
+                            </div>
+                        </div>
+                        <div class="detail col-12 col-md-6">
+                            <div class="word-detail">
+                                <div class="heading" style="text-align:center"><h4 style="color:#08a30d">PHIẾU MƯỢN SÁCH</h4></div>
+                            
+                                <div class="register-form">
+                                        <p>Ngày mượn:</p>
+                                        <input type="date" value="2020-05-31" min="2020-01-01" max="2025-12-31">
+                                        <p>Ngày trả:</p>
+                                        <input type="date" value="2020-08-31" min="2020-01-01" max="2025-12-31">
+                                        <p>Số lượng:</p>
+                                        <input type="number" value=1>
+                                </div>
+                                
+                                
+                            </div>
+                            
+                            <div class="button-form">
+                                <input type="button" class="btn-return" value="Mượn sách" onclick="location.href='confirm-borrow.html';">
+                                <input type="button" class="btn-cancel" value="Hủy bỏ" onclick="location.href='bookshelf.html';">
+                            </div>
+                            
+                        </div>
+
+                    </div>                                        
+                </div>
+            </div>
+        
+        <div class="footer">
+            <p>227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM</p>
+        </div>
+        <div class="chat-box">
+            <p>Chat với thủ thư</p><i class="far fa-comment-dots"></i>
+        </div>
+        </div>
+        
+        
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var nav = document.getElementsByClassName("nav-all");
+        function myFunction() {
+            let height=$(document).height();
+            
+            let sticky = nav[0].offsetTop;
+            if (window.pageYOffset > sticky) {
+            nav[0].classList.add("sticky");
+            } else {
+                    nav[0].classList.remove("sticky");
+            }
+        }
+        
+    </script>        
+    
+</body>
+</html>

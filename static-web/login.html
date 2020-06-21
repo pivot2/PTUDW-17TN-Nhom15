@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../stylesheets/login.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+        <div class="header">
+            <div class="d-flex justify-content-between text-center">
+                <p style="font-size: 39px;font-weight: 700;color:white;text-align: center;">fit@hcmus</p>
+                <select name="language" id="select-language">
+                    <option value="vi"> Vietnamese (vi)</option>
+                    <option value="en"> English (en)</option>
+                </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="form-login">
+                <h2>Đăng nhập</h2>
+                <form class="d-flex flex-column">
+                    <div class="name-input">
+                        <input type="text" id="name" required>
+                        <label for="name" id="label-name">Tên đăng nhập</label>
+                    </div>
+                    <div class="password-input">
+                        <input id="password" type="password" required>
+                        <label for="password" id="label-name">Mật khẩu</label>
+                    </div>
+                    <div class="checkbox-password">
+                        <input type="checkbox" value="Nhớ mật khẩu">
+                        <p>Nhớ mật khẩu</p>
+                    </div>
+                    
+                    <input type="button" value="Đăng nhập" onclick="myFunction()">
+                    <div class="bla" style="text-align: center;">
+                        <span>Chưa có tài khoản? Đăng ký tại </span><a href="signup.html">đây</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <p>227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM</p>
+        </div>
+</body>
+</html>
+<script>
+    function myFunction(){
+        let password=document.getElementById("password").value;
+        let username=document.getElementById("name").value;
+        console.log(username);
+        if (username==="admin" && password==="123456")
+        {
+            location.href="./admin-page/ad-myprofile.html";
+            return;
+        }
+        location.href="front-page-login.html";
+    }
+    
+</script>

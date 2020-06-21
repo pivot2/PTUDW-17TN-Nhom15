@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../stylesheets/ad-nav.css">
+    <link rel="stylesheet" href="../../stylesheets/ad-request-detail.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Thông tin tài khoản</title>
+</head>
+<body>
+    
+    <div class="gridcontainer">
+        
+        <div class="navbaradmin grid-item">
+            <ul>
+                <li><div class="title">TÀI KHOẢN</div></li>
+                <li><a a href="ad-myprofile.html"><div class="icons"><i class="fa fa-user-circle"></div></i><div class="linktitle">Thông tin cá nhân</div></a></li>
+                <li><div class="title">QUẢN LÍ</div></li>
+                <li class="active"><a href="ad-request-borrowbook.html"><div class="icons"><i class="fa fa-tags"></i></div><div class="linktitle">Yêu cầu mới</div></a></li>
+                <li ><a href="ad-listuser.html"><div class="icons"><i class="fa fa-calendar"></i></div><div class="linktitle">Lịch trả sách</div></a></li>
+                <li><div class="title">DỮ LIỆU</div></li>
+                <li ><a href="ad-listbook.html"><div class="icons"><i class="fa fa-book"></i></div><div class="linktitle">Kho sách</div></a></li>
+                <li ><a href="ad-listuser.html"><div class="icons"><i class="fa fa-users-cog"></i></div><div class="linktitle">Danh sách user</div></a></li>
+                <li><a href="../index.html"><div class="icons"><i class="fa fa-sign-out-alt"></i></div><div class="linktitle">Đăng xuất</div></a></li>
+            </ul>
+        </div>
+
+        <div class="grid-item">
+            <div class="headarea">
+                CHI TIẾT GIAO DỊCH
+            </div>
+            <form>
+                
+                <div class="form-group">
+                    <label for="idnumber">Mã giao dịch</label>
+                    <input type="text" class="form-control bg-light" id="idnumber" value="BO10027">
+                </div>
+
+                <div class="form-group">
+                    <label for="idnumber">Loại giao dịch</label>
+                    <input type="text" class="form-control bg-light" id="idnumber" value="Mượn">
+                </div>
+
+                <div class="form-group">
+                  <label for="username">Họ và tên</label>
+                  <input type="text" class="form-control bg-light" id="username" value="Phạm Hoàng Nhật Anh">
+                </div>
+
+                <div class="form-group">
+                  <label for="phonenumber">Số điện thoại</label>
+                  <input type="tel" class="form-control bg-light" id="phonenumber" value="+84947528639">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control bg-light" id="email" value="1712001@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="listbook">Danh sách sách mượn</label>
+                    <table class="text-center table table-bordered table-hover justify-content-center">
+                        <thead>
+                            <tr>
+                            <th scope="col-1">Mã sách</th>
+                            <th scope="col-3">Tên sách</th>
+                            <th scope="col-3">Tác giả</th>
+                            <th scope="col-3">Số lượng</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                              <th scope="row">
+                                  <a href="ad-listbook-bookdetail.html">CSC10001</a></th>
+                              <td>Lập trình hướng đối tượng</td>
+                              <td>Đinh Bá Tiến</td>
+                              <td>1</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">
+                                    <a href="ad-listbook-bookdetail.html">CSC10005</a></th>
+                                <td>Nhập môn lập trình</td>
+                                <td>Đinh Bá Tiến, Trần Minh Triết</td>
+                                <td>2</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row">
+                                    <a href="ad-listbook-bookdetail.html">CSC10008</a></th>
+                                <td>Cơ sở dữ liệu</td>
+                                <td>PGS. TS. Đồng Thị Bích Thủy, TS. Phạm Thị Bạch Huệ, TS. Nguyễn Trần Minh Thư</td>
+                                <td>1</td>
+                              </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="form-group">
+                    <label for="note">Ghi chú</label>
+                    <input type="text" class="form-control" id="note" value="Trả sách trễ 1 lần, Mất sách 1 lần">
+                </div>
+                
+                <div class="d-flex justify-content-around">
+                    <button type="submit" class="btn btn-primary">Xét duyệt</button>
+                    <button type="submit" class="btn btn-secondary">Hủy bỏ</button>
+                    <button type="submit" class="btn btn-danger" id="back-button">
+                        <a href="./ad-listuser.html">Quay lại</a>
+                    </button>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>

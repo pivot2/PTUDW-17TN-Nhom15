@@ -1,0 +1,103 @@
+var express = require('express');
+var path= require('path');
+var html=require('html');
+const { dirname } = require('path');
+let port=process.env.PORT||3000;
+var app=express();
+app.use(express.static(__dirname));
+app.get('/',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/index.html'));
+  });
+app.get('/borrow.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/borrow.html'));
+  });
+app.get('/bookshelf.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/bookshelf.html'));
+  });
+app.get('/confirm-borrow.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/confirm-borrow.html'));
+  });
+app.get('/confirm-return.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/confirm-return.html'));
+  });
+app.get('/detail.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/detail.html'));
+  });
+  app.get('/front-page-login.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/front-page-login.html'));
+  });
+  app.get('/index.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/index.html'));
+  });
+  app.get('/info.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/info.html'));
+  });
+  app.get('/login.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/login.html'));
+  });
+  app.get('/return.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/return.html'));
+  });
+  app.get('/search.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/search.html'));
+  });
+  app.get('/signup.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/signup.html'));
+  });
+  app.get('/status.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/status.html'));
+  });
+  app.get('/admin-page/ad-myprofile.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-myprofile.html'));
+  });
+  app.get('/admin-page/ad-listbook.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listbook.html'));
+  });
+  app.get('/admin-page/ad-listuser.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listuser.html'));
+  });
+  app.get('/admin-page/ad-listuser-userprofile.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listuser-userprofile.html'));
+  });
+  app.get('/admin-page/ad-listbook-bookdetail.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listbook-bookdetail.html'));
+  });
+  app.get('/admin-page/ad-request-borrowbook.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-request-borrowbook.html'));
+  });
+  app.get('/admin-page/ad-request-detail.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-request-detail.html'));
+  });
+  app.get('/admin-page/ad-listpayback.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listpayback.html'));
+  });
+  app.get('/admin-page/ad-listpayback-detail.html',(req,res)=>
+  {
+    res.sendFile(path.join(__dirname,'/admin-page/ad-listpayback-detail.html'));
+  });
+var server = app.listen(port, function() {
+    __dirname=path.join(__dirname,'/static-web');
+    console.log('listening for requests on port 3000');
+  });

@@ -1,0 +1,187 @@
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 768px) {
+    label{
+        font-size:12px;
+    }
+  }
+  
+  /* On screens that are 600px or less, set the background color to olive */
+*{
+    outline:none;
+}
+html {
+    height: 100%;
+  }
+body {
+    height: 100%;
+}
+
+.header{
+    background-color: #264492;
+}
+
+select{
+    border:1px solid #ccc;
+    background-color: #264492;
+    height: 100%;
+    color:white;
+    align-self:center;
+    margin-right: 20px;
+}
+
+option{
+    background-color:white;
+    color:black;
+    padding: 0;
+    margin:0;
+    
+}
+
+.header p{
+    align-self: center;
+    margin:10px 20px;
+    cursor: pointer;
+}
+
+select:focus{
+    outline:0px;
+}
+
+.form-signup{
+    width:90%;
+    max-width: 500px;
+    min-width: 400px;
+    margin:auto auto;
+    height: max-content;
+    border-radius: 10px;
+    border:1px solid #ccc;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.1);
+    padding:20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+input[type=submit]{
+    border:none;
+    line-height: 3;
+    width: 50%;
+    margin:30px auto 10px;
+    border-radius: 10px;
+    color:white;
+    background-color: #005dc0;
+    font-weight: 600;
+    font-size: large;
+}
+
+input[type=text], input[type=password], input[type=gmail], input[type=date]{
+    margin:0;
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-bottom:1px solid rgb(108, 189, 255);
+}
+
+.datepicker{
+    border-bottom:1px solid rgb(108, 189, 255);
+}
+h2{
+    text-align: center;
+    color:#005dc0;
+}
+.name-input,
+.password-input,
+.rewrite-password,
+.gmail-input,
+.phone-input,
+.datepicker{
+    width: 80%;
+    box-sizing:border-box;
+    margin-top:20px;
+    position: relative;
+    margin:15px auto 0;
+    height: 50px;
+}
+.password-input{
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.rewrite-password{
+    padding-left:0px;
+    padding-right: 0px;
+}
+.phone-input{
+    padding-left:0px;
+    padding-right: 10px;
+}
+.datepicker{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+label{
+    opacity: 80%;
+    position: absolute;
+    top:13px;
+    left:5px;
+    transition: .5s ease;
+    color:#2071c8;
+    background-color: white;
+}
+#name:focus,
+#name:valid,
+#password:focus,
+#password:valid,
+#rpassword:focus,
+#rpassword:valid,
+#gmail:focus,
+#gmail:valid,
+#phone:focus,
+#phone:valid{
+    border-bottom:2px solid rgb(108, 189, 255);
+}
+#name:focus + label,
+#name:valid + label,
+#password:focus + label,
+#password:valid + label,
+#rpassword:focus + label,
+#rpassword:valid + label,
+#gmail:focus + label,
+#gmail:valid + label,
+#phone:focus + label,
+#phone:valid + label
+{
+    top:-10px;
+    left:0px;
+    font-size:14px;
+    padding:0px;
+    z-index: 0;
+}
+
+#label-date{
+    width: 100%;
+    z-index: 1;
+}
+#date-picker{
+    opacity: 0;
+}
+.row{
+    width: calc(80%);
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #264492;
+    line-height: 2;
+    color:white;
+    bottom:0px;
+    position: relative;
+}
+.footer>p{
+    margin-bottom:0;
+    margin-left: 20px;
+}

@@ -1,0 +1,33 @@
+.gridcontainer{
+    display: grid;
+    height:100%;
+    grid-column-gap: 50px;
+    grid-template-columns: 20% 70%;
+}
+
+.headarea{
+    height: 100px;
+    background-color: #005DC0;
+    color: white;
+    padding: 35px 25px;
+    margin-bottom: 20px;
+}
+
+#listButton{
+    align-items: center;
+}
+
+.form-group input:not(#note), .form-group select{
+    pointer-events: none ;
+}
+
+.grid-item{
+    padding-bottom: 50px;
+}
+
+#back-button a{
+    color: white;
+}
+#back-button a:hover{
+    text-decoration: none;
+}

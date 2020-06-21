@@ -1,0 +1,16 @@
+.word-wrap-1{
+    color:#08a30d;
+    margin-right: 33%;
+}
+.button-form{
+    width: max-content;
+    margin:70px auto;
+}
+.button-form .btn-return{
+    background-color:#08a30d;
+    margin-left:0;
+    
+}
+.button-form .btn-cancel{
+    margin-left: 25px;
+}
