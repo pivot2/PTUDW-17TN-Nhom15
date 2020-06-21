@@ -175,4 +175,7 @@ ul{
 .owl-nav{
     margin:0 !important;
 }
+.main-container > .row {
+    min-height: 800px;
+}
 

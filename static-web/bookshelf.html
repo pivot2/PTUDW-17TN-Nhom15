@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="../stylesheets/bookshelf.css">
+    <title>Giỏ sách</title>
+</head>
+<body>
+    <div class="container1">
+        <div id="nav-placeholder">
+            <div class="nav-all">
+                <div class="nav">
+                    <img class="logo-hcmus" src="../images/hcmus.png" alt="">
+                    <div class="search-bar d-none d-lg-flex">
+                        <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                        <select name="type" id="select-type">
+                            <option value="tac-gia">Tác giả</option>
+                            <option value="isbn">ISBN</option>
+                            <option value="the-loai">Thể loại</option>
+                        </select>
+                        <button class="btn-search">Tìm kiếm</button>
+                    </div>
+                    <div class="nav-top">
+                        <ul>
+                            <li><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting"><i class="fas fa-cog"></i><span>Cài đặt</span></li>
+                            <li><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <nav class="navbar navbar-expand navbar-light bg-white">
+                        <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Dịch vụ
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Mượn sách</a>
+                              <a class="dropdown-item" href="#">Trả sách</a>
+                              <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        </ul>    
+                </nav>
+            </div>
+            
+            <div class="main-container">
+                <div class="bread-crumb" style="text-align: left;">
+                    <p class="bread-crumb-text" style="margin-left:30px">Trang chủ > <span style="font-weight: 600;">Giỏ sách</span></p>
+                </div>
+                <div class="row" id="row-1">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="side-panel">
+                            <ul class="side-table">
+                                <li><i class="fas fa-book"></i><p>DỊCH VỤ</p></li>
+                                <li><i class="far fa-newspaper"></i><p>TIN TỨC</p> </li>
+                                <li><i class="fas fa-phone"></i><p>LIÊN HỆ</p></li>
+                                <li><i class="far fa-question-circle"></i><p>FAQS</p></li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="new-table">
+                            <div class="headline">
+                                <b>TIN TỨC</b>
+                            </div>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <div class="more">
+                                <a href="">Xem tin khác...</a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-9" id="main-content">
+                        <h3>Giỏ sách</h3>
+                        <ul class="book-list">
+                            <li>
+                                <div class="row justify-content-between">
+                                    <div class="detail d-flex">
+                                        <div class="img-content">
+                                            <img src="../images/csdl.jpg" alt="">
+                                        </div>
+                                
+                                        <div class="word-wrap">
+                                            <p class="book-name">Cơ sở dữ liệu</p>
+                                            <div class="publish">
+                                                <span>Nhà xuất bản: </span><a href="">Nhà xuất bản khoa học và kỹ thuật</a>
+                                            </div>
+                                            <a href="" style="display: block;">Xóa</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="rating-star ">
+                                        <ul class="option-list">
+                                            <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
+                                            <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
+                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row justify-content-between">
+                                    <div class="detail d-flex">
+                                        <div class="img-content">
+                                            <img src="../images/csdl.jpg" alt="">
+                                        </div>
+                                
+                                        <div class="word-wrap">
+                                            <p class="book-name">Cơ sở dữ liệu</p>
+                                            <div class="publish">
+                                                <span>Nhà xuất bản: </span><a href="">Nhà xuất bản khoa học và kỹ thuật</a>
+                                            </div>
+                                            <a href="" style="display: block;">Xóa</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="rating-star ">
+                                        <ul class="option-list">
+                                            <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
+                                            <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
+                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row justify-content-between">
+                                    <div class="detail d-flex">
+                                        <div class="img-content">
+                                            <img src="../images/csdl.jpg" alt="">
+                                        </div>
+                                
+                                        <div class="word-wrap">
+                                            <p class="book-name">Cơ sở dữ liệu</p>
+                                            <div class="publish">
+                                                <span>Nhà xuất bản: </span><a href="">Nhà xuất bản khoa học và kỹ thuật</a>
+                                            </div>
+                                            <a href="" style="display: block;">Xóa</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="rating-star ">
+                                        <ul class="option-list">
+                                            <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
+                                            <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
+                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row justify-content-between">
+                                    <div class="detail d-flex">
+                                        <div class="img-content">
+                                            <img src="../images/csdl.jpg" alt="">
+                                        </div>
+                                
+                                        <div class="word-wrap">
+                                            <p class="book-name">Cơ sở dữ liệu</p>
+                                            <div class="publish">
+                                                <span>Nhà xuất bản: </span><a href="">Nhà xuất bản khoa học và kỹ thuật</a>
+                                            </div>
+                                            <a href="" style="display: block;">Xóa</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="rating-star ">
+                                        <ul class="option-list">
+                                            <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
+                                            <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
+                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.onscroll = function() {myFunction()};
+        
+    var nav = document.getElementsByClassName("nav-all");
+    function myFunction() {
+            let height=$(document).height();
+            
+            let sticky = nav[0].offsetTop;
+            if (window.pageYOffset > sticky) {
+            nav[0].classList.add("sticky");
+            } else {
+                    nav[0].classList.remove("sticky");
+            }
+        }
+</script>
+</html>

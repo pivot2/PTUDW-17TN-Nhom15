@@ -121,7 +121,7 @@ label{
 }
 .checkbox-password{
     width: max-content;
-    margin:20px auto;
+    margin:20px auto 10px;
 }
 .checkbox-password>p{
     display: inline-block;

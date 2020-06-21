@@ -1,0 +1,87 @@
+@media only screen and (max-width: 735px){
+    
+    .word-wrap{
+        word-wrap: break-word;
+    }
+    .option-list{
+        margin-bottom: 20px !important;
+    }
+    .option-list li{
+        width: 400px !important;
+    }
+}
+#row-1{
+    height: 100%;
+}
+#main-content{
+    padding:20px;
+    width: 100%;
+}
+.book-list{
+    background-color: white;
+}
+.book-list{
+    padding-left: 0px;
+}
+.book-list li{
+    min-height: 200px;
+    text-align: none;
+    display: flex;
+    height: 100%;
+    
+}
+.book-list .row{
+    border-top: 1px solid #f3f3f3;
+    width: 100%;
+    background-color: white;
+    height: 100%;
+}
+.img-content{
+    height: 200px;
+    max-width: 160px;
+    min-width: 160px;
+    padding:20px;
+    background-color: white;
+}
+.img-content img{
+    height: 100%;
+    width: 100%;
+}
+.word-wrap{
+    margin-right: 0px;
+    height: 100%;
+    width: 250px;
+    padding-top:20px;
+    background-color: white;
+}
+.book-name{
+    font-size:18px;
+}
+.publish{
+    margin-bottom: 20px;
+}
+.option-list {
+    margin:auto;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.option-list li{
+    border: 0.5px solid #ccc;
+    padding:5px;
+    text-align: left;
+    min-height: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+.option-list li:hover{
+    background-color: #08a30d;
+    color:white;
+}
+.option-list .fas{
+    margin-right: 30px;
+    color:#08a30d;
+}
+.fa-bookmark{
+    margin-left: 4px;
+}
