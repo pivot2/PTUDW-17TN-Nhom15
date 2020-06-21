@@ -1,13 +1,15 @@
 @media only screen and (max-width: 735px){
-    
+    .rating-star{
+        width: 100%;
+    }
     .word-wrap{
-        word-wrap: break-word;
+        width: 100% !important;
     }
     .option-list{
         margin-bottom: 20px !important;
     }
     .option-list li{
-        width: 400px !important;
+        width: 100% !important;
     }
 }
 #row-1{
@@ -85,3 +87,4 @@
 .fa-bookmark{
     margin-left: 4px;
 }
+

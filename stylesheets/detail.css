@@ -12,11 +12,11 @@
 p{
     margin-bottom: 0;
 }
+.content{
+    margin-top: 20px;
+}
 body{
     min-width: 100%;
-}
-.content{
-    margin:20px 0;
 }
 .img-content{
     min-height: 400px;

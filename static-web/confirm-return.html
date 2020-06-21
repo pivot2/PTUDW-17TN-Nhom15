@@ -30,13 +30,13 @@
                             <option value="isbn">ISBN</option>
                             <option value="the-loai">Thể loại</option>
                         </select>
-                        <button class="btn-search">Tìm kiếm</button>
+                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
                     </div>
                     <div class="nav-top">
                         <ul>
                             <li><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
-                            <li class="setting"><i class="fas fa-cog"></i><span>Cài đặt</span></li>
-                            <li><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></li>
+                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -51,9 +51,9 @@
                               Dịch vụ
                             </a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Mượn sách</a>
-                              <a class="dropdown-item" href="#">Trả sách</a>
-                              <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
+                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                                <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                             </div>
                           </li>
                         <li class="nav-item">
@@ -130,7 +130,7 @@
                             </div>
                             
                             <div class="button-form">
-                                <input type="button" class="btn-return" value="Xác nhận trả sách">
+                                <input type="button" class="btn-return" value="Xác nhận trả sách" onclick="location.href='front-page-login.html';">
                             </div>
                             
                         </div>

@@ -64,7 +64,7 @@ select:focus{
     margin-bottom:0;
     margin-left: 20px;
 }
-input[type=submit]{
+input[type=button]{
     border:none;
     line-height: 3;
     width: 50%;

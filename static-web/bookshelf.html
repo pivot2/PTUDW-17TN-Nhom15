@@ -31,13 +31,13 @@
                             <option value="isbn">ISBN</option>
                             <option value="the-loai">Thể loại</option>
                         </select>
-                        <button class="btn-search">Tìm kiếm</button>
+                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
                     </div>
                     <div class="nav-top">
                         <ul>
-                            <li><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
-                            <li class="setting"><i class="fas fa-cog"></i><span>Cài đặt</span></li>
-                            <li><i class="fas fa-sign-out-alt"></i><span>Đăng xuất</span></li>
+                            <li onclick="location.href='info.html';"><i class="fas fa-user" ></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -52,8 +52,8 @@
                               Dịch vụ
                             </a>
                             <div class="dropdown-menu">
-                              <a class="dropdown-item" href="#">Mượn sách</a>
-                              <a class="dropdown-item" href="#">Trả sách</a>
+                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
                               <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                             </div>
                           </li>
@@ -144,11 +144,11 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="rating-star ">
+                                    <div class="rating-star">
                                         <ul class="option-list">
                                             <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
                                             <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
-                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                            <li onclick="location.href='return.html';"><i class="fas fa-undo-alt"></i>Trả sách</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@
                                         <ul class="option-list">
                                             <li onclick="location.href='status.html';"><i class="fas fa-check-square"></i>Tình trạng</li>
                                             <li onclick="location.href='detail.html';"><i class="fas fa-info-circle"></i>Chi tiết</li>
-                                            <li onclick="location.href='borrow.html';"><i class="fas fa-bookmark"></i>Xin mượn</li>
+                                            <li onclick="location.href='return.html';"><i class="fas fa-undo-alt"></i>Trả sách</li>
                                         </ul>
                                     </div>
                                 </div>
