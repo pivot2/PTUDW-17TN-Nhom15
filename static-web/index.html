@@ -14,12 +14,72 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="../stylesheets/test.css">
     <title>Trang chủ</title>
 </head>
 <body>
     <div class="container1">
         <div id="nav-placeholder">
+            
+    <div class="nav-all">
+        <div class="nav">
+            <img class="logo-hcmus" src="../images/hcmus.png" alt="">`
+            <div class="search-bar d-none d-lg-flex">
+                <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                <select name="type" id="select-type">
+                    <option value="tac-gia">Tác giả</option>
+                    <option value="isbn">ISBN</option>
+                    <option value="the-loai">Thể loại</option>
+                </select>
+                <button class="btn-search" onclick="location.href='search.html';">Tìm kiếm</button>
+            </div>
+            <div class="login-form">
+                <div class="username bar">
+                    <i class="fas fa-user"></i>
+                    <input type="text" class="input-username">
+                </div>
+                <div class="password bar">
+                    <i class="fas fa-lock"></i>
+                    <input type="text" class="input-password">
+                </div>
+                <div class="action bar">
+                    <a href="signup.html">Đăng ký</a>
+                    <a href="signup.html">Quên mật khẩu</a>
+                    <i class="fas fa-sign-in-alt" onclick="location.href='login.html';"></i>
+                </div>
+            </div>
+            
+        </div>
+        <nav class="navbar navbar-expand navbar-light bg-white">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Dịch vụ
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
+                      <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                      <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tin tức</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQS</a>
+                </li>
+                </ul>    
+        </nav>
+    </div>
+    
+   
+
         </div>
         <div class="main-container">
             <div class="bread-crumb">
@@ -298,9 +358,6 @@
     </div>
     <script>
 
-        $(document).ready(function(){
-            $('#nav-placeholder').load('nav.html');
-        }); 
         window.onscroll = function() {myFunction()};
         var nav = document.getElementsByClassName("nav-all");
         function myFunction() {
