@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="../stylesheets/test.css">
-    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <link rel="stylesheet" href="../stylesheets/detail.css">        
     <title>Chi tiết sách</title>
 </head>
 <body>
@@ -23,21 +23,21 @@
         <div id="nav-placeholder">
             <div class="nav-all">
                 <div class="nav">
-                    <img class="logo-hcmus" src="../images/hcmus.png" alt="">
+                    <img class="logo-hcmus" onclick="location.href='/';" src="../images/hcmus.png" alt="">
                     <div class="search-bar d-none d-lg-flex">
-                        <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                        <input type="text" id="input-search" placeholder="Nhập vào thanh tìm kiếm">
                         <select name="type" id="select-type">
-                            <option value="tac-gia">Tác giả</option>
-                            <option value="isbn">ISBN</option>
-                            <option value="the-loai">Thể loại</option>
+                            <option value="name">Tên sách</option>
+                            <option value="author">Tác giả</option>
+                            <option value="publisher">Nhà xuất bản</option>
                         </select>
-                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
+                        <button id="btn-search">Tìm kiếm</button>
                     </div>
                     <div class="nav-top">
                         <ul>
-                            <li onclick="location.href='info.html';"><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
-                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
-                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
+                            <li onclick="location.href='info';"><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting" onclick="location.href='bookshelf';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index';"></i><span onclick="location.href='index';">Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -52,8 +52,8 @@
                               Dịch vụ
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
-                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                                <a class="dropdown-item" href="bookshelf">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf">Trả sách</a>
                                 <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                             </div>
                           </li>
@@ -89,12 +89,15 @@
                         <div class="headline">
                             <b>TIN TỨC</b>
                         </div>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <div id="news">
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        
+                        </div>
                         <div class="more">
                             <a href="">Xem tin khác...</a>
                         </div>
@@ -103,36 +106,7 @@
                 <div class="col-xs-12 col-lg-9" id="main-content">
                     <h3 style="margin:20px 0;">Chi tiết sách</h3>
                     <div class="content row">
-                        <div class="img-content col-12 col-md-5">
-                            <img src="../images/csdl.jpg" alt="">
-                            <h5>Lập trình hướng đối tượng</h5>
-                            <div class="rating">
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <a href="">(Xem 21 đánh giá)</a>
-                            </div>
-                        </div>
-                        <div class="detail col-12 col-md-7">
-                            <div class="word-detail">
-                                <h4>Mô tả</h4>
-                                <p>Tác giả: PGS. TS. Đồng Thị Bích Thủy, TS. Phạm Thị Bạch Huệ, TS. Nguyễn Trần Minh Thư.
-                                <p>Nhà xuất bản: Nhà xuất bản khoa học và kỹ thuật.</p>
-                                <p>Mô tả: Giáo trình Cơ sở dữ liệu cung cấp kiến thức căn bản nhất về mô hình dữ liệu quan hệ, các ngôn ngữ truy vấn và các nguyên tắc để tối ưu hóa câu truy vấn.</p>
-                            </div>
-                            
-                            <div class="number-detail">
-                                <h6>Số lượng mượn:</h6>
-                                <input type="number" class="quantity-control" placeholder="0">
-                                <input type="button" class="btn-borrow" value="Mượn sách" onclick="location.href='borrow.html';">
-                                <i class="far fa-heart"></i>
-                            </div>
-                            
-                        </div>
+                        
 
                     </div>
                     <h3>Sách tương tự</h3>
@@ -143,7 +117,7 @@
                                     <div class="image-fluid">
                                         <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
+                                    <h5 onclick="location.href='detail';">Lập trình hướng đối tượng</h5>
                                     <div class="rating">
                                         <div class="star-rating">
                                             <span class="fa fa-star checked"></span>
@@ -163,7 +137,7 @@
                                     <div class="image-fluid">
                                         <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
+                                    <h5 onclick="location.href='detail';">Lập trình hướng đối tượng</h5>
                                     <div class="rating">
                                         <div class="star-rating">
                                             <span class="fa fa-star checked"></span>
@@ -183,7 +157,7 @@
                                     <div class="image-fluid">
                                         <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
+                                    <h5 onclick="location.href='detail';">Lập trình hướng đối tượng</h5>
                                     <div class="rating">
                                         <div class="star-rating">
                                             <span class="fa fa-star checked"></span>
@@ -203,7 +177,7 @@
                                     <div class="image-fluid">
                                         <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
+                                    <h5 onclick="location.href='detail';">Lập trình hướng đối tượng</h5>
                                     <div class="rating">
                                         <div class="star-rating">
                                             <span class="fa fa-star checked"></span>
@@ -223,7 +197,7 @@
                                     <div class="image-fluid">
                                         <img src="../images/book.PNG" alt="">
                                     </div>
-                                    <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
+                                    <h5 onclick="location.href='detail';">Lập trình hướng đối tượng</h5>
                                     <div class="rating">
                                         <div class="star-rating">
                                             <span class="fa fa-star checked"></span>
@@ -359,6 +333,7 @@
         
         
     </div>
+    
     <script>
         window.onscroll = function() {myFunction()};
         
@@ -393,7 +368,79 @@
             },
             navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
         });
-    </script>        
-    
+    </script>  
+    <script src="./../functions/search.js"></script>      
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        let content=document.getElementsByClassName("content")[0];
+        fetch(`/api/book/id/${id}`,{
+            method:'GET',
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        }).then(data=>data.json())
+        .then(data=>{
+            let html=`<div class="img-content col-12 col-md-5">
+                            <img src="../../uploads/${data[0].image_link}" alt="">
+                            <h5>Lập trình hướng đối tượng</h5>
+                            <div class="rating">
+                                <div class="star-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <a href="">(Xem 21 đánh giá)</a>
+                            </div>
+                        </div>
+                        <div class="detail col-12 col-md-7">
+                            <div class="word-detail">
+                                <h4>Mô tả</h4>
+                                <p>Tác giả: ${data[0].author}</p>
+                                <p>Nhà xuất bản: ${data[0].publisher}</p>
+                                <p>Mô tả: ${data[0].description}</p>
+                                <p>Số lượng: ${data[0].quantity}</p>
+                            </div>
+                            
+                            <div class="number-detail">
+                                <h6>Giá bán:</h6>
+                                <span>
+                                    <span class="price">${data[0].price} đ</span>
+                                    <input type="button" id="btn-addtobookshelf" value="Thêm vào giỏ sách" onclick="add()">
+                                </span>
+                                
+                                <h6>Số lượng mượn:</h6>
+                                <input type="number" class="quantity-control" placeholder="0">
+                                <input type="button" class="btn-borrow" value="Mượn sách" onclick="location.href='borrow/?book=${data[0].id}';">
+                                
+                            </div>
+                            
+                        </div>`;
+            content.innerHTML+=html;
+            
+        })
+        function add(){
+            if (sessionStorage.isLoggedin=="false") {
+                console.log(sessionStorage.isLoggedin);
+                alert("Vui lòng đăng nhập để thêm vào giỏ sách")
+            }
+            else
+            fetch("/api/bookshelf/add",{
+                        method:'POST',
+                        headers: {
+                        'Content-Type': 'application/json'
+                        },
+                        body:JSON.stringify({
+                            "user_id":`${sessionStorage.userid}`,
+	                        "book_id":`${id}`
+                        })
+                        }).catch(err=>{
+                            console.log(err);
+                        })
+            
+        }
+    </script>
 </body>
 </html>

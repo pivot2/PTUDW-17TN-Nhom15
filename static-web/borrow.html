@@ -23,19 +23,19 @@
                 <div class="nav">
                     <img class="logo-hcmus" src="../images/hcmus.png" alt="">
                     <div class="search-bar d-none d-lg-flex">
-                        <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                        <input type="text" id="input-search" placeholder="Nhập vào thanh tìm kiếm">
                         <select name="type" id="select-type">
-                            <option value="tac-gia">Tác giả</option>
-                            <option value="isbn">ISBN</option>
-                            <option value="the-loai">Thể loại</option>
+                            <option value="name">Tên sách</option>
+                            <option value="author">Tác giả</option>
+                            <option value="publisher">Nhà xuất bản</option>
                         </select>
-                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
+                        <button id="btn-search">Tìm kiếm</button>
                     </div>
                     <div class="nav-top">
                         <ul>
-                            <li onclick="location.href='info.html';"><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
-                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
-                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
+                            <li onclick="location.href='info';"><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
+                            <li class="setting" onclick="location.href='bookshelf';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index';"></i><span onclick="location.href='index';">Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -50,8 +50,8 @@
                               Dịch vụ
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
-                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                                <a class="dropdown-item" href="bookshelf">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf">Trả sách</a>
                               <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                             </div>
                           </li>
@@ -69,9 +69,6 @@
             </div>           
         </div>
         <div class="main-container">
-            <div class="bread-crumb">
-                <p class="bread-crumb-text">Chào mừng <span style="font-weight: 600;">Nguyễn Xuân Thắng</span> đến với thư viện khoa Công nghệ thông tin Đại học Khoa học tự nhiên- ĐHQG TP HCM</p>
-            </div>
             <div class="row">
                 <div class="col-lg-3 d-none d-lg-block">
                     <div class="side-panel">
@@ -87,12 +84,15 @@
                         <div class="headline">
                             <b>TIN TỨC</b>
                         </div>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <div id="news">
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        
+                        </div>
                         <div class="more">
                             <a href="">Xem tin khác...</a>
                         </div>
@@ -100,39 +100,26 @@
                 </div>
                 <div class="col-xs-12 col-lg-9" id="main-content">
                     <div class="content row">
-                        <div class="img-content col-12 col-md-6">
-                            <img src="../images/csdl.jpg" alt="">
-                            <h5>Lập trình hướng đối tượng</h5>
-                            <div class="rating">
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <a href="">(Xem 21 đánh giá)</a>
-                            </div>
-                        </div>
+                        
                         <div class="detail col-12 col-md-6">
                             <div class="word-detail">
                                 <div class="heading" style="text-align:center"><h4 style="color:#08a30d">PHIẾU MƯỢN SÁCH</h4></div>
                             
                                 <div class="register-form">
                                         <p>Ngày mượn:</p>
-                                        <input type="date" value="2020-05-31" min="2020-01-01" max="2025-12-31">
+                                        <input type="date" value="2020-05-31" min="2020-01-01" max="2025-12-31" id="start">
                                         <p>Ngày trả:</p>
-                                        <input type="date" value="2020-08-31" min="2020-01-01" max="2025-12-31">
+                                        <input type="date" value="2020-08-31" min="2020-01-01" max="2025-12-31" id="end">
                                         <p>Số lượng:</p>
-                                        <input type="number" value=1>
+                                        <input type="number" value=1 id="number">
                                 </div>
                                 
                                 
                             </div>
                             
                             <div class="button-form">
-                                <input type="button" class="btn-return" value="Mượn sách" onclick="location.href='confirm-borrow.html';">
-                                <input type="button" class="btn-cancel" value="Hủy bỏ" onclick="location.href='bookshelf.html';">
+                                <input type="button" id="ok" class="btn-return" value="Mượn sách" onclick="test()">
+                                <input type="button" class="btn-cancel" value="Hủy bỏ" onclick="location.href='/bookshelf';">
                             </div>
                             
                         </div>
@@ -167,6 +154,93 @@
         }
         
     </script>        
-    
+<script src="./../functions/search.js"></script> 
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    const book_id = urlParams.get('book');
+    if (id!=null) 
+    {
+        //console.log(1);
+        fetch(`/api/bookshelf/id/${id}/`,{
+                            method:'GET',
+                            headers: {
+                            'Content-Type': 'application/json'
+                            }
+                        }).then(data=>data.json())
+                        .then(data=>{
+                            fetch(`/api/book/id/${data.bookshelf[0].id_book}`,{
+                                method:'GET',
+                                headers: {
+                                'Content-Type': 'application/json'
+                                }
+                                }).then(data=>data.json())
+                                .then(data=>{
+                                    let html=`  <div class="img-content col-12 col-md-6">
+                                                <img src="../../uploads/${data[0].image_link}" alt="">
+                                                <h5>${data[0].name}</h5>
+                                                <div class="rating">
+                                                    <div class="star-rating">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <a href="">(Xem 21 đánh giá)</a>
+                                                </div>
+                                            </div>`;
+                                    let content=document.getElementsByClassName("content")[0];
+                                    content.innerHTML=html+content.innerHTML;
+                                })
+                        })
+                    }
+    else{
+        fetch(`/api/book/id/${book_id}`,{
+                                method:'GET',
+                                headers: {
+                                'Content-Type': 'application/json'
+                                }
+                                }).then(data=>data.json())
+                                .then(data=>{
+                                    let html=`  <div class="img-content col-12 col-md-6">
+                                                <img src="../../uploads/${data[0].image_link}" alt="">
+                                                <h5>${data[0].name}</h5>
+                                                <div class="rating">
+                                                    <div class="star-rating">
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                    </div>
+                                                    <a href="">(Xem 21 đánh giá)</a>
+                                                </div>
+                                            </div>`;
+                                    let content=document.getElementsByClassName("content")[0];
+                                    content.innerHTML=html+content.innerHTML;
+                                })
+    }
+    var confirm=document.getElementById("ok");
+    function test(){
+        let number=document.getElementById("number").value;
+        let start=document.getElementById("start").value;
+        let end=document.getElementById("end").value;
+        fetch("/api/borrow/add",{
+            method:'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    body:JSON.stringify({
+                            "id":`${id}`,
+                            "start":`${start}`,
+                            "end":`${end}`,
+                            "quantity":`${number}`
+                        })  
+        })
+        .then(()=>location.href="/confirm-borrow")
+        .catch(err=>console.log(err));
+    }
+</script>
 </body>
 </html>

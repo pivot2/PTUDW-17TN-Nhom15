@@ -54,8 +54,11 @@ input[type="button"]{
     width: 150px;
     padding:5px;
     margin-left: 50px;
+    margin-bottom: 20px;
 }
-
+.number-detail input[type="button"]:hover{
+    background-color:rgb(253, 128, 128);
+}
 .word-detail{
     padding:20px;
     border-bottom: 2px solid #f4f4f4;
@@ -71,6 +74,10 @@ input[type="button"]{
 .fa-heart:hover{
     color:red;
 }
+.fas.fa-heart{
+    color:red;
+}
+
 .comment-rating{
     width: 100%;
     background-color: white;
@@ -177,4 +184,11 @@ textarea:focus{
 }
 .rating-bottom .row{
     background-color: white;
+}
+.price{
+    color: rgb(255, 52, 37);
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }

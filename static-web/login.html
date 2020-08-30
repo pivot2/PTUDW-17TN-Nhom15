@@ -39,9 +39,9 @@
                         <p>Nhớ mật khẩu</p>
                     </div>
                     
-                    <input type="button" value="Đăng nhập" onclick="myFunction()">
+                    <input type="button" value="Đăng nhập" id="login">
                     <div class="bla" style="text-align: center;">
-                        <span>Chưa có tài khoản? Đăng ký tại </span><a href="signup.html">đây</a>
+                        <span>Chưa có tài khoản? Đăng ký tại </span><a href="signup">đây</a>
                     </div>
                 </form>
             </div>
@@ -50,18 +50,35 @@
             <p>227 Nguyễn Văn Cừ, P.4, Q.5, TP.HCM</p>
         </div>
 </body>
-</html>
 <script>
-    function myFunction(){
-        let password=document.getElementById("password").value;
-        let username=document.getElementById("name").value;
-        console.log(username);
-        if (username==="admin" && password==="123456")
-        {
-            location.href="./admin-page/ad-myprofile.html";
-            return;
-        }
-        location.href="front-page-login.html";
-    }
-    
+    console.log(1);
+    let login=document.getElementById("login");
+    console.log(login);
+    login.addEventListener("click",()=>{
+                let username=document.getElementById("name").value;
+                let password=document.getElementById("password").value;
+                fetch("api/account/login",{
+                        method:'POST',
+                        headers: {
+                        'Content-Type': 'application/json'
+                        },
+                        body:JSON.stringify({
+                            "username":`${username}`,
+                            "password":`${password}`
+                        })
+                        }).then(res=>{
+                            return res.json();                             
+                        }).then(data=>{
+                            
+                            sessionStorage.userid=data.id;
+                            sessionStorage.isLoggedin=true;
+                            if (data.type==1)
+                                location.href="/front-page-login";
+                            else location.href="/admin-page/ad-myprofile";
+                        }  
+                        )
+            })
+        
+        
 </script>
+</html>

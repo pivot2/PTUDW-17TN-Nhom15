@@ -12,22 +12,21 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Thông tin tài khoản</title>
 </head>
-<body>
-    
+<body>    
     <div class="gridcontainer">
         
         <div class="navbaradmin grid-item">
-            <ul>
-              <li><div class="title">TÀI KHOẢN</div></li>
-              <li><a a href="ad-myprofile.html"><div class="icons"><i class="fa fa-user-circle"></div></i><div class="linktitle">Thông tin cá nhân</div></a></li>
-              <li><div class="title">QUẢN LÍ</div></li>
-              <li ><a href="ad-request-borrowbook.html"><div class="icons"><i class="fa fa-tags"></i></div><div class="linktitle">Yêu cầu mới</div></a></li>
-              <li ><a href="ad-listpayback.html"><div class="icons"><i class="fa fa-calendar"></i></div><div class="linktitle">Lịch trả sách</div></a></li>
-              <li><div class="title">DỮ LIỆU</div></li>
-              <li ><a href="ad-listbook.html"><div class="icons"><i class="fa fa-book"></i></div><div class="linktitle">Kho sách</div></a></li>
-              <li class="active"><a><div class="icons"><i class="fa fa-users-cog"></i></div><div class="linktitle">Danh sách user</div></a></li>
-              <li><a href="../index.html"><div class="icons"><i class="fa fa-sign-out-alt"></i></div><div class="linktitle">Đăng xuất</div></a></li>
-            </ul>
+          <ul>
+            <li><div class="title">TÀI KHOẢN</div></li>
+            <li><a a href="/admin-page/ad-myprofile"><div class="icons"><i class="fa fa-user-circle"></div></i><div class="linktitle">Thông tin cá nhân</div></a></li>
+            <li><div class="title">QUẢN LÍ</div></li>
+            <li ><a href="/admin-page/ad-request-borrowbook"><div class="icons"><i class="fa fa-tags"></i></div><div class="linktitle">Yêu cầu mới</div></a></li>
+            <li ><a href="/admin-page/ad-listpayback"><div class="icons"><i class="fa fa-calendar"></i></div><div class="linktitle">Lịch trả sách</div></a></li>
+            <li><div class="title">DỮ LIỆU</div></li>
+            <li ><a href="/admin-page/ad-listbook"><div class="icons"><i class="fa fa-book"></i></div><div class="linktitle">Kho sách</div></a></li>
+            <li class="active"><a href="/admin-page/ad-listuser"><div class="icons"><i class="fa fa-users-cog"></i></div><div class="linktitle">Danh sách user</div></a></li>
+            <li><a href="/"><div class="icons"><i class="fa fa-sign-out-alt"></i></div><div class="linktitle">Đăng xuất</div></a></li>
+          </ul>
         </div>
 
         <div class="grid-item" id="content">
@@ -40,175 +39,47 @@
                   <thead>
                     <tr>
                       <th scope="col-1">Thứ tự</th>
-                      <th scope="col-2">Mã user</th>
-                      <th scope="col-2">Họ và tên</th>
+                      <th scope="col-2">Username</th>
+                      <th scope="col-2">Gmail</th>
                       <th scope="col-2">
-                        <select class="option">
-                          <option>Chức vụ</option>
-                          <option>Giảng viên</option>
-                          <option>Sinh viên</option>
+                        SĐT
                       </th>
                       <th scope="col-2">Chi tiết</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
+                  <tbody id="rows">
 
-                    <tr>
-                      <td>2</td>
-                      <td>146497897</td>
-                      <td>Nguyễn Duy Khánh</td>
-                      <td>Giảng viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>3</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>4</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>5</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>6</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>7</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>8</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>9</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>10</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>11</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>12</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>13</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>14</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
-
-                    <tr>
-                      <td>15</td>
-                      <td>1712001</td>
-                      <td>Phạm Hoàng Nhật Anh</td>
-                      <td>Sinh viên</td>
-                      <td scope="row">
-                        <a href="ad-listuser-userprofile.html">Xem</a></td>
-                    </tr>
                   </tbody>
                 </table>
             </div>
 
-            <nav aria-label="Page navigation search result">
-              <ul class="pagination justify-content-center">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            
             
         </div>
     </div>
 </body>
+<script>
+  fetch('/api/account',{
+            method:'GET',
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        }).then(function(data){
+            return data.json();
+        }).then(function(data){
+
+            let rows=document.getElementById("rows");
+            for (i=0;i<data.length;i++)
+            {
+                let html=`<tr>
+                        <td>${i+1}</td>
+                        <td>${data[i].username}</td>
+                        <td>${data[i].gmail}</td>
+                        <td>${data[i].phone}</td>
+                        <td><a href="ad-listuser-userprofile/?id=${data[i].id}">Xem</a></td>
+                      </tr>`;
+                rows.innerHTML+=html;
+            }   
+        })
+</script>
 </html>

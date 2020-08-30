@@ -24,19 +24,19 @@
                 <div class="nav">
                     <img class="logo-hcmus" src="../images/hcmus.png" alt="">
                     <div class="search-bar d-none d-lg-flex">
-                        <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                        <input type="text" id="input-search" placeholder="Nhập vào thanh tìm kiếm">
                         <select name="type" id="select-type">
-                            <option value="tac-gia">Tác giả</option>
-                            <option value="isbn">ISBN</option>
-                            <option value="the-loai">Thể loại</option>
+                            <option value="name">Tên sách</option>
+                            <option value="author">Tác giả</option>
+                            <option value="publisher">Nhà xuất bản</option>
                         </select>
-                        <button class="btn-search" onclick="location.href='bookshelf.html';">Tìm kiếm</button>
+                        <button id="btn-search">Tìm kiếm</button>
                     </div>
                     <div class="nav-top">
                         <ul>
                             <li><i class="fas fa-user"></i><span>Quản lí tài khoản</span></li>
-                            <li class="setting" onclick="location.href='bookshelf.html';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
-                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index.html';"></i><span onclick="location.href='index.html';">Đăng xuất</span></li>
+                            <li class="setting" onclick="location.href='bookshelf';"><i class="fas fa-shopping-cart"></i><span>Giỏ sách</span></li>
+                            <li><i class="fas fa-sign-out-alt" onclick="location.href='index';"></i><span onclick="location.href='index';">Đăng xuất</span></li>
                         </ul>
                     </div>
                     
@@ -51,8 +51,8 @@
                               Dịch vụ
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
-                                <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                                <a class="dropdown-item" href="bookshelf">Mượn sách</a>
+                                <a class="dropdown-item" href="bookshelf">Trả sách</a>
                                 <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                             </div>
                           </li>
@@ -88,12 +88,15 @@
                         <div class="headline">
                             <b>TIN TỨC</b>
                         </div>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <div id="news">
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                            <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        
+                        </div>
                         <div class="more">
                             <a href="">Xem tin khác...</a>
                         </div>
@@ -130,7 +133,7 @@
                             </div>
                             
                             <div class="button-form">
-                                <input type="button" class="btn-return" value="Xác nhận trả sách" onclick="location.href='front-page-login.html';">
+                                <input type="button" class="btn-return" value="Xác nhận trả sách" onclick="location.href='front-page-login';">
                             </div>
                             
                         </div>
@@ -165,6 +168,6 @@
         }
         
     </script>        
-    
+<script src="./../functions/search.js"></script> 
 </body>
 </html>

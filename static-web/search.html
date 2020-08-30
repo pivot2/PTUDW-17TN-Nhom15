@@ -21,15 +21,15 @@
             
     <div class="nav-all">
         <div class="nav">
-            <img class="logo-hcmus" src="../images/hcmus.png" alt="">`
+            <img class="logo-hcmus" src="../images/hcmus.png" alt="">
             <div class="search-bar d-none d-lg-flex">
-                <input type="text" class="input-search" placeholder="Nhập vào thanh tìm kiếm">
+                <input type="text" id="input-search" placeholder="Nhập vào thanh tìm kiếm">
                 <select name="type" id="select-type">
-                    <option value="tac-gia">Tác giả</option>
-                    <option value="isbn">ISBN</option>
-                    <option value="the-loai">Thể loại</option>
+                    <option value="name">Tên sách</option>
+                    <option value="author">Tác giả</option>   
+                    <option value="publisher">Nhà xuất bản</option>
                 </select>
-                <button class="btn-search" onclick="location.href='search.html';">Tìm kiếm</button>
+                <button id="btn-search">Tìm kiếm</button>
             </div>
             <div class="login-form">
                 <div class="username bar">
@@ -41,9 +41,9 @@
                     <input type="text" class="input-password">
                 </div>
                 <div class="action bar">
-                    <a href="signup.html">Đăng ký</a>
-                    <a href="signup.html">Quên mật khẩu</a>
-                    <i class="fas fa-sign-in-alt" onclick="location.href='login.html';"></i>
+                    <a href="signup">Đăng ký</a>
+                    <a href="signup">Quên mật khẩu</a>
+                    <i class="fas fa-sign-in-alt" onclick="location.href='login';"></i>
                 </div>
             </div>
             
@@ -58,8 +58,8 @@
                       Dịch vụ
                     </a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item" href="bookshelf.html">Mượn sách</a>
-                      <a class="dropdown-item" href="bookshelf.html">Trả sách</a>
+                      <a class="dropdown-item" href="bookshelf">Mượn sách</a>
+                      <a class="dropdown-item" href="bookshelf">Trả sách</a>
                       <a class="dropdown-item" href="#">Đặt mua sách-giáo trình</a>
                     </div>
                   </li>
@@ -95,12 +95,15 @@
                     <div class="headline">
                         <b>TIN TỨC</b>
                     </div>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
-                    <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                    <div id="news">
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                        <li><i class="fas fa-arrow-right"></i>Danh sách sinh viên nhận thẻ thư viện tháng 3</li>
+                    
+                    </div>
                     <div class="more">
                         <a href="">Xem tin khác...</a>
                     </div>
@@ -108,197 +111,17 @@
             </div>
 
             <div class="col-xs-12 col-lg-9" id="search-header">
-                <h4>Kết quả cho "hướng đối tượng": 123 kết quả</h4>
-                <div class="order-search">
-                    <div>Ưu tiên xem:</div>
-                    <ul class="option">
-                        <li><a class="active" href="#">Rating</a></li>
-                        <li><a href="#">Số lượt mượn</a></li>
-                        <li><a href="#">Năm xuất bản</a></li>
-                    </ul>
+                <h4 id="search-result"></h4>
+                <br>
+                <div class="row" id="result">
+                      
                 </div>
-
-                <div class="row">
-            
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white card ml-sm-0">
-                            <div class="mx-auto">
-                                <div class="image-fluid">
-                                    <img src="../images/book.PNG" alt="">
-                                </div>
-                                <h5 onclick="location.href='detail.html';">Lập trình hướng đối tượng</h5>
-                                <div>Đinh Bá Tiến</div>
-                                <div class="rating">
-                                    <div class="star-rating">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                    <p>(10 nhận xét)</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>    
+                
                 
                 <nav aria-label="Page navigation search result">
                     <ul class="pagination justify-content-center">
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                          <span aria-hidden="true">&laquo;</span>
-                        </a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                          <span aria-hidden="true">&raquo;</span>
-                        </a>
-                      </li>
                     </ul>
-                  </nav>
+                </nav>
 
             </div>
         </div>
@@ -321,20 +144,101 @@
                 }
             }
         }
-    </script>    
     
-    <script>
         $('.option').on('click','a',function(){
             $('.option a.active').removeClass('active');
             $(this).addClass('active');
         });
-    </script>
-
-    <script>
         $('.pagination').on('click','li',function(){
             $('.pagination li.active').removeClass('active');
             $(this).addClass('active');
         });
     </script>
+    <script>
+        
+        let e=document.getElementById("select-type");
+        var result=document.getElementById("result");
+        let pagination=document.getElementsByClassName("pagination")[0];
+        let search_option=e[e.selectedIndex].value;
+        const urlParams = new URLSearchParams(window.location.search);
+        const search = urlParams.get('search');
+        const search_type = urlParams.get('search_type');
+        
+        //Load trang dau tien
+        function loadPageNumber(){
+            return fetch(`/api/book?page=&size=&search=${search}&search_type=${search_type}`,{
+                            method:'GET',
+                            headers: {
+                            'Content-Type': 'application/json'
+                            }
+                            }).then(data=>data.json())
+                            .then(data=>{          
+                                search_result=document.getElementById("search-result"); 
+                                search_result.innerText=`Tìm kiếm được ${data.length} kết quả liên quan tới "${search}"`;             
+                                
+                                for (let i=1;i<=Math.ceil(data.length/9);i++)
+                                {
+                                    let page_normal=`<li class="page-item"><a class="page-link" href="#">${i}</a></li>`;
+                                    pagination.innerHTML+=page_normal;
+                                }
+                                let page_number=document.getElementsByClassName("page-item").length;   
+                                return page_number; 
+                            })
+            
+            
+        }
+        function loadPage(i){
+            let page_item=document.getElementsByClassName("page-item");
+            result.innerHTML="";
+            fetch(`/api/book?page=${i}&size=9&search=${search}&search_type=${search_type}`,{
+                                method:'GET',
+                                headers: {
+                                'Content-Type': 'application/json'
+                                }
+                                }).then(data=>data.json())
+                                .then(data=>{
+                                    for (j=0;j<data.length;j++)
+                                    {
+                                        
+                                        let html=`<div class="bg-white card ml-sm-0">
+                                                <div class="mx-auto">
+                                                    <div class="image-fluid">
+                                                        <img src="../uploads/${data[j].image_link}" alt="">
+                                                    </div>
+                                                    <h5 onclick="location.href='detail?id=${data[j].id}';">${data[j].name}</h5>
+                                                    <div>${data[j].author}</div>
+                                                    <div class="rating">
+                                                        <div class="star-rating">
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span>
+                                                        </div>
+                                                        <p>(10 nhận xét)</p>
+                                                    </div>
+                                                </div>
+                                            </div>`;
+                                        result.innerHTML+=html;
+                                        
+                                    }
+                                    
+                                }
+                                )
+        }
+
+        loadPageNumber().then(page_number=>{
+            //Load trang dau tien
+            let page_item=document.getElementsByClassName("page-item");
+            page_item[0].classList.add("active");
+            loadPage(0);            
+            //Xu ly load tung trang 
+            for (let i=0;i<page_number;i++){
+                page_item[i].onclick=()=>loadPage(i);         
+            }
+        });
+  
+    </script>
+    <script src="./../functions/search.js"></script> 
 </body>
 </html>

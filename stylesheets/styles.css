@@ -28,19 +28,16 @@ body{
     border: 0.5px solid #ccc;
     padding:5px;
     text-align: left;
+    line-height: 1.5;
 }
-.side-table .fas{
+.side-table .fas,.far {
     margin:10px 20px;
     width: 21px;
     height: 21px;
-    cursor: pointer;
+    cursor: pointer; 
+    padding-top:5px;
 }
-.side-table .far{
-    margin:10px 20px;
-    width: 21px;
-    height: 21px;
-    cursor: pointer;
-}
+
 .side-table>li>p{
     font-weight: 500;
     display: inline-block;
@@ -66,10 +63,15 @@ body{
     height: max-content;
     border-radius: 10px 10px 0 0;
 } 
-.new-table>li{
+#news>li{
     font-style:italic;
     color: darkblue;
     margin:5px 0;
+    cursor: pointer;
+}
+#news>li>.fas{
+    margin-right: 10px;
+    margin-left: 5px;
 }
 .more>a{
     margin-left:50%;
@@ -156,6 +158,7 @@ body{
     margin-bottom: 0;
     cursor:pointer;
     margin-right: 10px;
+    align-self: center;
 }
 .chat-box>.far{
     margin-top:7px;
@@ -179,3 +182,6 @@ ul{
     min-height: 800px;
 }
 
+.logo-hcmus{
+    cursor: pointer;
+}
